@@ -28,64 +28,83 @@ export default function RootLayout({
       >
         <div className="">
           <div className="grid grid-cols-12 grid-rows-12 h-screen w-screen">
-            <div className="grid grid-rows-subgrid grid-cols-subgrid col-start-2 col-end-4 row-start-2 row-end-3 font-text">
-              <div className="grid grid-rows-2 grid-cols-1 item-center">
+            <div className="grid grid-rows-subgrid grid-cols-subgrid col-start-1 col-end-3 row-start-1 row-end-3 font-title">
+              <div className="col-span-2 row-span-2 flex items-center justify-center">
                 <Link href="/">
-                  <p className="text-lg text-center">Michael West</p>
-                  <p className="text-sm text-center">westmike at umich.edu</p>
+                  <div className="text-center">
+                    <p className="text-2xl">Michael West</p>
+                    <p className="text-sm">westmike at umich.edu</p>
+                  </div>
                 </Link>
               </div>
             </div>
-            <div className="grid col-start-10 col-end-13 row-start-3 row-end-4 font-bold grid-cols-3 grid-rows-4 text-center font-text">
-              <div className="grid col-start-1 col-end-1 row-start-4 row-end-4 relative top-1 border-b-4 border-slate-300 hover:border-slate-700 "><Link href="/projects">Projects</Link></div>
-              <div className="grid col-start-2 col-end-2 row-start-4 row-end-4 relative top-1 border-b-4 border-slate-300 hover:border-slate-700"><Link href="/blog">Blog</Link></div>
-              <div className="grid col-start-3 col-end-3 row-start-4 row-end-4 relative top-1 border-b-4 border-slate-300 hover:border-slate-700"><Link href="/about">About</Link></div>
-            </div>
+
             <div className="grid grid-cols-subgrid grid-rows-subgrid col-start-1 col-end-3 row-start-4 row-end-13 font-text">
-              <div className="grid grid-rows-subgrid row-start-1 row-end-4 col-start-1 col-end-3">
-                <div className="grid grid-rows-subgrid row-start-1 row-end-1 col-start-1 col-end-3 text-center">
-                  <div className="grid grid-rows-6 grid-cols-1 text-center">
-                    <p className="grid grid-rows-subgrid row-start-1 row-end-2 text-xl"><b>SKILLS</b></p>
-                    <p className="grid grid-rows-subgrid row-start-2 row-end-3 text-lg">Languages</p>
-                    <p className="grid grid-rows-subgrid row-start-4 row-end-6 text-base">Python, C/C++, JavaScript, Java, MATLAB</p>
+              <div className="col-span-2 flex flex-col gap-4 items-center text-center justify-self-center">
+                <div className="flex flex-col gap-8 items-center text-center">
+                  <div className="flex flex-col">
+                    <div className="flex flex-col ">
+                      <p className="text-xl font-bold">SKILLS</p>
+                      <p className="text-lg font-bold">Languages</p>
+                      <p className="text-base ">Python, C/C++, JavaScript, Java, MATLAB</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col">
+                    <div className="flex flex-col">
+                      <p className="text-lg font-bold">Libraries</p>
+                      <p className="text-base">PyTorch, Pandas, NumPy, Flask, React, Next.js, Selenium</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col">
+                    <div className="flex flex-col">
+                      <p className="text-lg font-bold">Subjects</p>
+                      <p className="text-base">
+                        Computer Vision<br />
+                        Machine Learning<br />
+                        Full Stack Development<br />
+                        API/Backend Development<br />
+                        Distributed Computing
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col">
+                    <div className="flex flex-col">
+                      <p className="text-xl font-bold">SOCIAL</p>
+                      <p className="text-lg"><Link href="https://github.com/west-mike">GitHub</Link></p>
+                      <p className="text-lg"><Link href="https://www.linkedin.com/in/west-mike/">LinkedIn</Link></p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col">
+                    <p className="text-xl font-bold"><a href="/Resume.pdf" download>RESUME</a></p>
                   </div>
                 </div>
-                <div className="grid grid-rows-subgrid row-start-2 row-end-2 col-start-1 col-end-3">
-                  <div className="grid grid-rows-4 grid-cols-1 text-center">
-                    <p className="grid grid-rows-subgrid row-start-1 row-end-2 text-lg">Libraries</p>
-                    <p className="grid grid-rows-subgrid row-start-2 row-end-4 text-base">PyTorch, Pandas, NumPy, Flask, React, Next.js, Selenium</p>
-                  </div>
-                </div>
-                <div className="grid grid-rows-subgrid row-start-3 row-end-4 col-start-1 col-end-3">
-                  <div className="grid grid-rows-6 grid-cols-1 text-center">
-                    <p className="grid grid-rows-subgrid row-start-1 row-end-2 text-lg">Subjects</p>
-                    <p className="grid grid-rows-subgrid row-start-3 row-end-6 text-base">
-                      Computer Vision<br />
-                      Machine Learning<br />
-                      Full Stack Development<br />
-                      API/Backend Development<br />
-                      Distributed Computing
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="grid grid-rows-subgrid row-start-5 row-end-7 col-start-1 col-end-3">
-                <div className="grid grid-rows-4 grid-cols-1 text-center">
-                  <p className="grid grid-rows-subgrid row-start-1 row-end-2 text-xl"><b>SOCIAL</b></p>
-                  <p className="grid grid-rows-subgrid row-start-3 row-end-4 text-lg"><Link href="https://github.com/west-mike">GitHub</Link></p>
-                  <p className="grid grid-rows-subgrid row-start-5 row-end-6 text-lg"><Link href="https://www.linkedin.com/in/west-mike/">LinkedIn</Link></p>
-                </div>
-              </div>
-              <div className="grid grid-rows-subgrid row-start-7 row-end-8 col-start-1 col-end-3 text-center">
-                <p className="text-xl"><b><a href="public/Resume.pdf" download>RESUME</a></b></p>
               </div>
             </div>
-            <div className="grid grid-cols-subgrid grid-rows-subgrid col-start-3 col-end-10 row-start-4 row-end-13 border-t-4 border-l-4 border-white font-bold">
+            <div className="grid grid-cols-12 grid-rows-12 col-start-3 col-end-13 row-start-4 row-end-13 border-l-4 border-white font-bold relative">
+              <div className="col-span-12 border-t-4 border-white flex items-center justify-between relative">
+                <div className="absolute right-0 top-[-2.5rem] flex space-x-4">
+                  <div className="relative flex items-center justify-center p-2 group">
+                    <Link href="/projects" className="group-hover:text-slate-700">Projects</Link>
+                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-transparent group-hover:bg-slate-700"></div>
+                  </div>
+                  <div className="relative flex items-center justify-center p-2 group">
+                    <Link href="/blog" className="group-hover:text-slate-700">Blog</Link>
+                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-transparent group-hover:bg-slate-700"></div>
+                  </div>
+                  <div className="relative flex items-center justify-center p-2 group">
+                    <Link href="/about" className="group-hover:text-slate-700">About</Link>
+                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-transparent group-hover:bg-slate-700"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-span-12 row-span-11 overflow-auto">
+                {children}
+              </div>
             </div>
-            {children}
+
           </div>
         </div>
       </body>
-    </html>
+    </html >
   );
 }
