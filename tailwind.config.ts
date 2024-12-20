@@ -7,10 +7,16 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      'title': ['Orbitron'],
+      'body': ['Play', 'sans-serif'],
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        black: '#000',
+        white: '#fff',
+        background: 'black',
+
       },
     },
   },
