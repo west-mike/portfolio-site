@@ -82,13 +82,21 @@ export default function RootLayout({
             </div>
             <div className="grid grid-cols-12 grid-rows-12 col-start-3 col-end-13 row-start-4 row-end-13 border-l-4 border-white font-bold relative">
               <div className="col-span-12 border-t-4 border-white flex items-center justify-between relative">
-                <div className="absolute right-0 top-[-2.5rem] flex space-x-4">
+                <div className="absolute right-2 top-[-2.5rem] flex space-x-4">
                   <div className="relative flex items-center justify-center p-2 group">
                     <Link href="/projects" className="group-hover:text-slate-700">Projects</Link>
                     <div className="absolute bottom-0 left-0 right-0 h-1 bg-transparent group-hover:bg-slate-700"></div>
                   </div>
                   <div className="relative flex items-center justify-center p-2 group">
                     <Link href="/blog" className="group-hover:text-slate-700">Blog</Link>
+                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-transparent group-hover:bg-slate-700"></div>
+                  </div>
+                  <div className="relative flex items-center justify-center p-2 group">
+                    <Link href="/books" className="group-hover:text-slate-700">Books</Link>
+                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-transparent group-hover:bg-slate-700"></div>
+                  </div>
+                  <div className="relative flex items-center justify-center p-2 group">
+                    <Link href="/music" className="group-hover:text-slate-700">Music</Link>
                     <div className="absolute bottom-0 left-0 right-0 h-1 bg-transparent group-hover:bg-slate-700"></div>
                   </div>
                   <div className="relative flex items-center justify-center p-2 group">

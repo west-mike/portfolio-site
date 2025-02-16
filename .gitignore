@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# non-github content
+Resume.pdf
+/images/
 # production
 /build
 
