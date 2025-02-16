@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${orbitronBold} ${orbitronStd} antialiased overscroll-contain`}
+        className={`${orbitronBold} ${orbitronStd} antialiased overscroll-contain bg-black text-white`}
       >
         <div className="">
           <div className="grid grid-cols-12 grid-rows-12 h-screen w-screen">
