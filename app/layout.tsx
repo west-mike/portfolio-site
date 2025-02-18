@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Orbitron } from "next/font/google";
 import Link from 'next/link'
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 
 const orbitronStd = Orbitron({
@@ -107,6 +108,7 @@ export default function RootLayout({
               </div>
               <div className="col-span-12 row-span-11 overflow-auto">
                 {children}
+                <Analytics />
               </div>
             </div>
 

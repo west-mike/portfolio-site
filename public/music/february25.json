@@ -3,28 +3,36 @@
         {
             "title": "Shona",
             "artist": "Jake Chudnow",
+            "artist_link": "https://open.spotify.com/artist/0IhZsSjGTFJBXIM5unqzdV?si=cca02a461c7f4a2f",
             "album": "Shona EP",
+            "album_link": "https://open.spotify.com/album/3sKv18MCypZJzh9bEncv5G?si=-Pk8NbrcTZWCuuTehNAuAw",
             "genre": "Progressive Techno",
             "link": "https://open.spotify.com/track/0JNRE2AVZvGfJdNNabrVIg?si=2a256a3c8c24455f"
         },
         {
             "title": "Frenchcore Lullaby",
             "artist": "Dr. Peacock, D'ort",
+            "artist_link": "https://open.spotify.com/artist/5uRYpUQZrNrY5t8tAv1Xr3",
             "album": "Frenchcore Lullaby",
+            "album_link": "https://open.spotify.com/album/2dZzZ2z2z2z2z2z2z2z2z2",
             "genre": "Frenchcore",
             "link": "https://open.spotify.com/track/7cefEHMhMytNfvL0GBjd0K?si=c14a7e1c645d48cd"
         },
         {
             "title": "You've Done Enough",
             "artist": "Gorgon City, DRAMA",
+            "artist_link": "https://open.spotify.com/artist/4RbUYWWjEBb4umwqakOEd3?si=_WZ4k5G7S_qaE0EYXn-J3A",
             "album": "Olympia",
+            "album_link": "https://open.spotify.com/album/2VzWAU4teRPOILn0FQz08t?si=71vdWsPDS5mcp-LwerBnVQ",
             "genre": "House",
             "link": "https://open.spotify.com/track/77VqW84V88aKD8Bi8CzEsP?si=00a4240afd6f47f9"
         },
         {
             "title": "Did You Love Somebody",
             "artist": "Peach Pit feat. Sir Chloe",
+            "artist_link": "https://open.spotify.com/artist/6fC2AcsQtd9h4BWELbbire?si=c763affd8f7d4df9",
             "album": "Magpie (Expansion Pack)",
+            "album_link": "https://open.spotify.com/prerelease/3oAcXdoOlUjRkMMxHz9YrG?si=48288d90d57b4db1",
             "genre": "Indie Rock",
             "link": "https://open.spotify.com/track/3lZhH5QiBpcPUrvSy5VfZz?si=5d5abe0c81c54976"
         }
