@@ -1,27 +1,25 @@
 import { useState, useEffect } from "react";
 
-export function useMusicData(month: string) {
-    const [songs, setSongs] = useState([]);
+export function useBookData() {
+    const [books, setBooks] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // convert month input from selected month to file prefix
-                const filePrefix = month.replace(/\s/g, "").toLowerCase();
                 // fetch file
-                const res = await fetch(`/music/${filePrefix}.json`);
+                const res = await fetch(`/books/books.json`);
                 if (!res.ok) throw new Error("File not found");
                 // convert file data to json
                 const data = await res.json();
                 // make songs stateful [] equal to "songs" key in json, empty if error
-                setSongs(data.songs);
+                setBooks(data.books);
             } catch (err) {
                 console.error(err);
-                setSongs([]);
+                setBooks([]);
             }
         };
         fetchData();
-    }, [month]);
+    });
 
-    return songs;
+    return books;
 }

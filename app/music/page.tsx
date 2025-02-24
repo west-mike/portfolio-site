@@ -56,7 +56,7 @@ export default function MusicPage() {
                     <TableBody>
                         {songs.map((song, index) => (
                             <TableRow key={index}>
-                                <TableCell>{song.title}</TableCell>
+                                <TableCell><a href={song.link} target="_blank" rel="noopener noreferrer">{song.title}</a></TableCell>
                                 <TableCell><a href={song.artist_link} target="_blank">{song.artist}</a></TableCell>
                                 <TableCell><a href={song.album_link} target="_blank">{song.album}</a></TableCell>
                                 <TableCell>{song.genre}</TableCell>

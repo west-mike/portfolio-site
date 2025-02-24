@@ -47,25 +47,19 @@ export default function RootLayout({
                     <div className="flex flex-col ">
                       <p className="text-xl font-bold">SKILLS</p>
                       <p className="text-lg font-bold">Languages</p>
-                      <p className="text-base ">Python, C/C++, JavaScript, Java, MATLAB</p>
+                      <p className="text-base ">Python, C/C++, JavaScript, Java</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col">
+                    <div className="flex flex-col">
+                      <p className="text-lg font-bold">Web Frameworks</p>
+                      <p className="text-base">React, Next.js, Svelte, Flask</p>
                     </div>
                   </div>
                   <div className="flex flex-col">
                     <div className="flex flex-col">
                       <p className="text-lg font-bold">Libraries</p>
-                      <p className="text-base">PyTorch, Pandas, NumPy, Flask, React, Next.js, Selenium</p>
-                    </div>
-                  </div>
-                  <div className="flex flex-col">
-                    <div className="flex flex-col">
-                      <p className="text-lg font-bold">Subjects</p>
-                      <p className="text-base">
-                        Computer Vision<br />
-                        Machine Learning<br />
-                        Full Stack Development<br />
-                        API/Backend Development<br />
-                        Distributed Computing
-                      </p>
+                      <p className="text-base">PyTorch, Pandas, NumPy, OpenCV, Selenium</p>
                     </div>
                   </div>
                   <div className="flex flex-col">

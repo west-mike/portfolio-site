@@ -47,10 +47,7 @@ export default function Home() {
                                 web development skills, and showcasing my personal brand and giving myself a platform to build upon for the future in an effort to
                                 inspire me to develop more often in my free time.
                                 <br /><br />
-                                You may notice the design of the site is a bit strange and very different from a lot
-                                of other portfolio sites, that is intentional. Whenever I thought about what I wanted my site to look like, I always came back to two
-                                core concepts: a black, white, and gray color scheme, and a minimalistic yet slightly future-retro UI. While this site is not perfect,
-                                it is the design I envisioned for myself. I will always continue to update this site and continue to perfect the UI so feel free to check
+                                I have two core concepts guiding my site design: a black, white, and gray color scheme, and a minimalistic yet slightly future-retro UI. I will always continue to update this site and continue to perfect the UI so feel free to check
                                 back in the future and see how it has grown!
                             </p>
                         </section>
