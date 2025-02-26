@@ -9,6 +9,7 @@ import {
     TableRow,
 } from "@/components/ui/table"
 import { useBookData } from "./hooks/useBookData";
+
 export default function Home() {
     const books = useBookData();
     return (
@@ -19,7 +20,8 @@ export default function Home() {
                         <TableCell>Title</TableCell>
                         <TableCell>Author</TableCell>
                         <TableCell>Genre</TableCell>
-                        <TableCell>Completed</TableCell>
+                        <TableCell>Date Read</TableCell>
+                        <TableCell>Link</TableCell>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -28,14 +30,18 @@ export default function Home() {
                             <TableCell>{book.title}</TableCell>
                             <TableCell>{book.author}</TableCell>
                             <TableCell>{book.genre}</TableCell>
-                            <TableCell>{book.month_read + " " + book.year_read}</TableCell>
+                            <TableCell>{book.month_read} {book.year_read}</TableCell>
+                            <TableCell>
+                                {book.link && (
+                                    <a href={book.link} target="_blank" rel="noopener noreferrer">
+                                        View Details
+                                    </a>
+                                )}
+                            </TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
             </Table>
-
-
-
         </div>
     );
 }

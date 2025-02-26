@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import { Song } from "../types";
 
-export function useMusicData(month: string) {
-    const [songs, setSongs] = useState([]);
+export function useMusicData(month: string): Song[] {
+    const [songs, setSongs] = useState<Song[]>([]);
 
     useEffect(() => {
         const fetchData = async () => {

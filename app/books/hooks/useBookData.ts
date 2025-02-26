@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import { Book } from "../types";
 
-export function useBookData() {
-    const [books, setBooks] = useState([]);
+export function useBookData(): Book[] {
+    const [books, setBooks] = useState<Book[]>([]);
 
     useEffect(() => {
         const fetchData = async () => {

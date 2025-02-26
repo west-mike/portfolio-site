@@ -5,24 +5,24 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import {
     Table,
     TableBody,
-    TableCaption,
     TableCell,
-    TableHead,
     TableHeader,
     TableRow,
-} from "@/components/ui/table"
+} from "@/components/ui/table";
 import { useMusicData } from "./hooks/useMusicData";
+import { Song } from "./types";
 
 export default function MusicPage() {
     const [curMonth, setCurMonth] = useState("February 25");
     const [disMonth, setDisMonth] = useState("February 2025");
+
     const handleMonthClick = (month: string) => {
         setCurMonth(month);
         const index = month.search(/\d/);
         setDisMonth(month.slice(0, index) + '20' + month.slice(index));
     };
 
-    const songs = useMusicData(curMonth);
+    const songs: Song[] = useMusicData(curMonth);
 
     return (
         <div className="grid grid-cols-12 grid-rows-12 h-screen w-screen">
@@ -39,7 +39,6 @@ export default function MusicPage() {
                 </div>
                 <div className="box-content border-0 overflow-auto font-text text-s italic text-gray-300">
                     The Cut is my curated monthly playlist of songs that I have been listening to. I try to keep it high-quality and genre-spanning.
-
                 </div>
             </div>
             <div className="col-start-3 col-end-10 row-start-2 row-end-13 p-2 border-l-1 border-gray-500">
@@ -66,6 +65,6 @@ export default function MusicPage() {
                     </TableBody>
                 </Table>
             </div>
-        </div >
+        </div>
     );
 }
