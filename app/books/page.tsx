@@ -2,9 +2,7 @@
 import {
     Table,
     TableBody,
-    TableCaption,
     TableCell,
-    TableHead,
     TableHeader,
     TableRow,
 } from "@/components/ui/table"
@@ -21,7 +19,7 @@ export default function Home() {
                         <TableCell>Author</TableCell>
                         <TableCell>Genre</TableCell>
                         <TableCell>Date Read</TableCell>
-                        <TableCell>Link</TableCell>
+
                     </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -31,13 +29,7 @@ export default function Home() {
                             <TableCell>{book.author}</TableCell>
                             <TableCell>{book.genre}</TableCell>
                             <TableCell>{book.month_read} {book.year_read}</TableCell>
-                            <TableCell>
-                                {book.link && (
-                                    <a href={book.link} target="_blank" rel="noopener noreferrer">
-                                        View Details
-                                    </a>
-                                )}
-                            </TableCell>
+
                         </TableRow>
                     ))}
                 </TableBody>
