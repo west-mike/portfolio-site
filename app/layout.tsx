@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Orbitron } from "next/font/google";
 import Link from 'next/link'
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Image from 'next/image';
 
 
@@ -33,7 +34,7 @@ export default function RootLayout({
         <div className="grid grid-cols-12 grid-rows-12 h-screen w-screen">
           <div className="grid grid-rows-subgrid grid-cols-subgrid col-start-1 col-end-3 row-start-1 row-end-3 font-title">
             <div className="col-span-2 row-span-2 flex items-center justify-center">
-              <Link href="/">
+              <Link href="/about">
                 <div className="text-center">
                   <p className="text-2xl">Michael West</p>
                   <div className="flex flex-row items-center justify-center gap-2">
@@ -204,6 +205,7 @@ export default function RootLayout({
             <div className="col-span-12 row-span-11 overflow-auto">
               {children}
               <Analytics />
+              <SpeedInsights />
             </div>
           </div>
         </div>
