@@ -49,6 +49,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
                     );
                 }
             }}
+            className="font-text"
         >
             {content}
         </ReactMarkdown>

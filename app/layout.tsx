@@ -175,7 +175,7 @@ export default function RootLayout({
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-12 grid-rows-12 col-start-3 col-end-13 row-start-2 row-end-13 border-white font-bold relative">
+          <div className="grid grid-cols-12 grid-rows-12 col-start-3 col-end-13 row-start-2 row-end-13 border-white font-bold font-title relative">
             <div className="col-span-12   flex items-center justify-between relative">
               <div className="absolute right-2 top-[-2.5rem]">
                 <div className="flex space-x-4 border-b border-white">

@@ -4,7 +4,7 @@ function getPostLink(postNumber: number) {
     return (
         <div>
             <Link href={link}>
-                Project {postNumber}
+                Audiolyze
             </Link>
         </div>
     );

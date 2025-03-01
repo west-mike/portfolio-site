@@ -7,7 +7,11 @@ export default async function Page() {
     const markdownContent = fs.readFileSync(filePath, 'utf8');
 
     return (
-        <div className="grid col-start-3 col-end-13 row-start-4 row-end-13 box-content p-12 border-0 overflow-auto font-title">
+        <div className="grid col-start-3 col-end-13 row-start-4 row-end-13 box-content  border-0 overflow-auto font-text">
+            <h1 className="text-3xl">Building a Waveform Visualizer in Svelte</h1>
+            <p className="text-m text-gray-400 relative left-0"> By Michael West</p>
+            <p className="text-m text-gray-400 relative left-0"> February 28, 2025</p>
+            <br></br>
             <MarkdownRenderer content={markdownContent}></MarkdownRenderer>
         </div >
     );
