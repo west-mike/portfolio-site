@@ -12,7 +12,7 @@
   --font-*: initial;
   --font-title: Orbitron;
   --font-body: Play, sans-serif;
-
+  --font-mark: Roboto Mono;
   --color-black: #000;
   --color-white: #fff;
   --color-background: black;
@@ -27,6 +27,14 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+  .blog-page h2 {
+    @apply text-2xl font-extrabold;
+  }
+
+  .blog-page a {
+    @apply text-gray-300 underline hover:text-blue-700;
+  }
+
   *,
   ::after,
   ::before,
@@ -35,6 +43,7 @@
     border-color: var(--color-gray-200, currentColor);
   }
 }
+
 /*
   ---break---
 */
@@ -49,6 +58,7 @@
   --sidebar-border: hsl(220 13% 91%);
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
 }
+
 /*
   ---break---
 */
@@ -66,6 +76,7 @@
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
 }
+
 /*
   ---break---
 */

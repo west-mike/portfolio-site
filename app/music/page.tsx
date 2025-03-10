@@ -25,45 +25,52 @@ export default function MusicPage() {
     const songs: Song[] = useMusicData(curMonth);
 
     return (
-        <div className="grid grid-cols-12 grid-rows-12 h-screen w-screen">
-            <div className="col-start-1 col-end-3 row-start-1 row-end-13 p-4">
-                <h2 className="text-2xl font-bold font-title">The Cut</h2>
-                <ScrollArea className="h-full w-full rounded-md border-none items-center">
-                    <h3 className="font-bold text-xl underline m-0">2025</h3>
-                    <MusicMonthSelector month="February 25" onClick={() => handleMonthClick("February 25")} />
-                </ScrollArea>
-            </div>
-            <div className="col-start-3 col-end-13 row-start-1 row-end-3 p-2 border-l-1 border-gray-500">
-                <div className="flex justify-between items-center mb-2">
-                    <p className="text-xl font-bold">{disMonth}</p>
+        <div className="grid col-start-3 col-end-13 row-start-4 row-end-13 box-content border-0 h-full">
+            <div className="grid grid-cols-12 grid-rows-6 h-full">
+                {/* Sidebar */}
+                <div className="col-span-2 row-span-6 p-4 border-r border-gray-500">
+                    <h2 className="text-2xl font-bold font-title">The Cut</h2>
+                    <ScrollArea className="h-[90%] w-full rounded-md border-none">
+                        <h3 className="font-bold text-xl underline m-0">2025</h3>
+                        <MusicMonthSelector month="February 25" onClick={() => handleMonthClick("February 25")} />
+                    </ScrollArea>
                 </div>
-                <div className="box-content border-0 overflow-auto font-text text-s italic text-gray-300">
-                    The Cut is my curated monthly playlist of songs that I have been listening to. I try to keep it high-quality and genre-spanning.
+
+                {/* Header */}
+                <div className="col-span-10 row-span-1 p-4">
+                    <div className="flex justify-between items-center">
+                        <p className="text-xl font-bold">{disMonth}</p>
+                    </div>
+                    <p className="text-sm italic text-gray-300">
+                        The Cut is my curated monthly playlist of songs that I have been listening to. I try to keep it high-quality and genre-spanning.
+                    </p>
                 </div>
-            </div>
-            <div className="col-start-3 col-end-10 row-start-2 row-end-13 p-2 border-l-1 border-gray-500">
-                <Table>
-                    <TableHeader>
-                        <TableRow>
-                            <TableCell>Title</TableCell>
-                            <TableCell>Artist</TableCell>
-                            <TableCell>Album</TableCell>
-                            <TableCell>Genre</TableCell>
-                            <TableCell>Link</TableCell>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        {songs.map((song, index) => (
-                            <TableRow key={index}>
-                                <TableCell><a href={song.link} target="_blank" rel="noopener noreferrer">{song.title}</a></TableCell>
-                                <TableCell><a href={song.artist_link} target="_blank">{song.artist}</a></TableCell>
-                                <TableCell><a href={song.album_link} target="_blank">{song.album}</a></TableCell>
-                                <TableCell>{song.genre}</TableCell>
-                                <TableCell><a href={song.link} target="_blank" rel="noopener noreferrer">Open on Spotify</a></TableCell>
+
+                {/* Table */}
+                <div className="col-span-10 row-span-5 p-4 pt-0 overflow-auto">
+                    <Table>
+                        <TableHeader>
+                            <TableRow>
+                                <TableCell>Title</TableCell>
+                                <TableCell>Artist</TableCell>
+                                <TableCell>Album</TableCell>
+                                <TableCell>Genre</TableCell>
+                                <TableCell>Link</TableCell>
                             </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
+                        </TableHeader>
+                        <TableBody>
+                            {songs.map((song, index) => (
+                                <TableRow key={index}>
+                                    <TableCell><a href={song.link} target="_blank" rel="noopener noreferrer">{song.title}</a></TableCell>
+                                    <TableCell><a href={song.artist_link} target="_blank">{song.artist}</a></TableCell>
+                                    <TableCell><a href={song.album_link} target="_blank">{song.album}</a></TableCell>
+                                    <TableCell>{song.genre}</TableCell>
+                                    <TableCell><a href={song.link} target="_blank" rel="noopener noreferrer">Open on Spotify</a></TableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                </div>
             </div>
         </div>
     );

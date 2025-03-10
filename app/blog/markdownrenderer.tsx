@@ -11,6 +11,7 @@ import python from 'react-syntax-highlighter/dist/cjs/languages/prism/python';
 import bash from 'react-syntax-highlighter/dist/cjs/languages/prism/bash';
 import css from 'react-syntax-highlighter/dist/cjs/languages/prism/css';
 import atomDark from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark';
+//import { Handjet } from 'next/font/google'
 
 // Register commonly used languages
 SyntaxHighlighter.registerLanguage('typescript', typescript);
@@ -22,7 +23,7 @@ SyntaxHighlighter.registerLanguage('css', css);
 interface MarkdownRendererProps {
     content: string;
 }
-
+//const quicksand = Handjet({ subsets: ['latin'] })
 const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
     return (
         <ReactMarkdown
@@ -49,7 +50,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
                     );
                 }
             }}
-            className="font-text"
+            className="font-mark text-xl blog-page"
         >
             {content}
         </ReactMarkdown>
