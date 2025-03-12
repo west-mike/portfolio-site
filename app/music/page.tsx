@@ -32,7 +32,8 @@ export default function MusicPage() {
                     <h2 className="text-2xl font-bold font-title">The Cut</h2>
                     <ScrollArea className="h-[90%] w-full rounded-md border-none">
                         <h3 className="font-bold text-xl underline m-0">2025</h3>
-                        <MusicMonthSelector month="February 25" onClick={() => handleMonthClick("February 25")} />
+                        <MusicMonthSelector month="March" onClick={() => handleMonthClick("March 25")} />
+                        <MusicMonthSelector month="February" onClick={() => handleMonthClick("February 25")} />
                     </ScrollArea>
                 </div>
 
@@ -61,11 +62,11 @@ export default function MusicPage() {
                         <TableBody>
                             {songs.map((song, index) => (
                                 <TableRow key={index}>
-                                    <TableCell><a href={song.link} target="_blank" rel="noopener noreferrer">{song.title}</a></TableCell>
-                                    <TableCell><a href={song.artist_link} target="_blank">{song.artist}</a></TableCell>
-                                    <TableCell><a href={song.album_link} target="_blank">{song.album}</a></TableCell>
+                                    <TableCell><a href={song.link} target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 hover:underline ">{song.title}</a></TableCell>
+                                    <TableCell><a href={song.artist_link} target="_blank" className="hover:text-slate-400 hover:underline ">{song.artist}</a></TableCell>
+                                    <TableCell><a href={song.album_link} target="_blank" className="hover:text-slate-400 hover:underline ">{song.album}</a></TableCell>
                                     <TableCell>{song.genre}</TableCell>
-                                    <TableCell><a href={song.link} target="_blank" rel="noopener noreferrer">Open on Spotify</a></TableCell>
+                                    <TableCell><a href={song.link} target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 hover:underline ">Open on Spotify</a></TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>

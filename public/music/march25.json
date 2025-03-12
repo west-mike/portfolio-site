@@ -1,0 +1,22 @@
+{
+    "songs": [
+        {
+            "title": "Raingurl",
+            "artist": "Yaeji",
+            "artist_link": "https://open.spotify.com/artist/2RqrWplViWHSGLzlhmDcbt?si=4ebb6e6498d54c93",
+            "album": "EP2",
+            "album_link": "https://open.spotify.com/album/6zB32HTy4cewV8V7TuHzKJ?si=G3RWXErITvW09G4LVWCrFg",
+            "genre": "Lo-Fi House",
+            "link": "https://open.spotify.com/track/4XXfQ8fBHMIgcygY4hV6RC?si=fccbd2d7422d4d72"
+        },
+        {
+            "title": "Garden of Eden",
+            "artist": "Lady Gaga",
+            "artist_link": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms?si=fa7530a0877d470c",
+            "album": "MAYHEM",
+            "album_link": "https://open.spotify.com/album/2MHUaRi9OCyTN02SoyRRBJ?si=2XmnJrKnTve3gmxhAMBRtw",
+            "genre": "Pop",
+            "link": "https://open.spotify.com/track/4mUR5Tv0CvJtpmnUtzeIgd?si=59f859509447488c"
+        }
+    ]
+}
