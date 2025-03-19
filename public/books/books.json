@@ -9,6 +9,56 @@
             "genre": "Self-help",
             "link": "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299",
             "thoughts_link": null
+        },
+        {
+            "title": "Less",
+            "author": "Andrew Sean Greer",
+            "date_pub": 2017,
+            "year_read": 2023,
+            "month_read": "March",
+            "genre": "Satirical Gay Fiction",
+            "link": "https://www.amazon.com/Less-Winner-Pulitzer-Prize-Novel/dp/0316316121",
+            "thoughts_link": null
+        },
+        {
+            "title": "Morning Star",
+            "author": "Pierce Brown",
+            "date_pub": 2016,
+            "year_read": 2024,
+            "month_read": "December",
+            "genre": "Dystopian Science Fiction",
+            "link": "https://www.goodreads.com/book/show/18966806-morning-star",
+            "thoughts_link": null
+        },
+        {
+            "title": "Golden Son",
+            "author": "Pierce Brown",
+            "date_pub": 2015,
+            "year_read": 2024,
+            "month_read": "December",
+            "genre": "Dystopian Science Fiction",
+            "link": "https://www.goodreads.com/book/show/18966819-golden-son",
+            "thoughts_link": null
+        },
+        {
+            "title": "Red Rising",
+            "author": "Pierce Brown",
+            "date_pub": 2014,
+            "year_read": 2024,
+            "month_read": "December",
+            "genre": "Dystopian Science Fiction",
+            "link": "https://www.goodreads.com/book/show/15839976-red-rising",
+            "thoughts_link": null
+        },
+        {
+            "title": "Song of Achilles",
+            "author": "Madeline Miller",
+            "date_pub": 2011,
+            "year_read": 2023,
+            "month_read": "April",
+            "genre": "Historical Gay Fiction",
+            "link": "https://www.goodreads.com/book/show/13623848-the-song-of-achilles",
+            "thoughts_link": null
         }
     ]
 }

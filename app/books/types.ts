@@ -4,4 +4,5 @@ export interface Book {
     genre: string;
     month_read: string;
     year_read: string;
+    link: string;
 }
