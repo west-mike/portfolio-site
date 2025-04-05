@@ -8,9 +8,14 @@ export default function Home() {
             </div>
             <div className="grid col-start-1 col-end-11 row-start-1 row-end-10 box-content p-16 border-0">
                 <div className="grid grid-cols-3 grid-rows-2 items-center text-center font-title">
-                    <div>
+                    <div className="hidden">
                         <Link href="/projects/p1">
                             Audiolyze
+                        </Link>
+                    </div>
+                    <div>
+                        <Link href="/projects/p3">
+                            DateTemp
                         </Link>
                     </div>
                     <div>
@@ -18,6 +23,7 @@ export default function Home() {
                             Linkdgen
                         </Link>
                     </div>
+
                 </div>
             </div>
         </div>
